@@ -5,7 +5,6 @@
     "use strict";
 
     var app = WinJS.Application;
-    var activation = Windows.ApplicationModel.Activation;
     var isFirstActivation = true;
 
     app.onactivated = function (args) {
@@ -68,7 +67,6 @@
 
 
 function setLaunchScreen() {
-    var ViewManagement = Windows.UI.ViewManagement;
     var ApplicationView = ViewManagement.ApplicationView;
 
     var normalWidth = 1000;
@@ -91,12 +89,10 @@ function setLaunchScreen() {
 
 function setScreenSize() {
 
-    var ViewManagement = Windows.UI.ViewManagement;
     var ApplicationView = ViewManagement.ApplicationView;
     var normalWidth = 1260;
     var normalHeight = 600;
 
-    var info = Windows.Graphics.Display.DisplayInformation.getForCurrentView();
 
     var view = ApplicationView.getForCurrentView();
     var t = view && view.tryResizeView({ width: normalWidth, height: normalHeight });
