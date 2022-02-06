@@ -41,7 +41,6 @@
             args.setPromise(WinJS.UI.processAll());
 
             window.setLaunchScreen();
-            Ads.initAds();
             //IntersititialAds.SetupAds();
 
             document.getElementById("webview").addEventListener("MSWebViewScriptNotify", LevelComplete);
