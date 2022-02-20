@@ -28234,7 +28234,7 @@ box2d.b2MotorJoint.prototype.SetAngularOffset = function(a) {
                     return this.levelState = a
                 }, f.prototype.create = function() {
                     var level = parseInt(this.levelState.data.id);
-                    if (!isNaN(level) && level % 2 == 0)
+                    if (false)
                         window.external.notify("Rate");
 
                     return this.levelState.success ? (this.game.progress.update(this.levelState), this.menu = new c(this.game, this.levelState), this.menu.show()) : (this.menu = new d(this.game, this.levelState), this.menu.show());  //LevelUP
